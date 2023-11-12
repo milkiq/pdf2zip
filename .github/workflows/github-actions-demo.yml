@@ -22,10 +22,10 @@ jobs:
     - name: Zip Executables
       run: |
         mkdir result
-        cp build/pdftozip.exe result/
+        cp build/Release/pdftozip.exe result/
         cp pdftopng.exe result/
         cp zip.ps1 result/
-        Compress-Archive -Path zip/* -DestinationPath result.zip
+        Compress-Archive -Path result/* -DestinationPath result.zip
       shell: powershell
     - name: Upload Artifact
       uses: actions/upload-artifact@v2
