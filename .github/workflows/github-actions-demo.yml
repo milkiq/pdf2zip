@@ -1,7 +1,9 @@
 
 name: Build and Zip C++ Project
 
-on: [tag]
+on:
+  release:
+    types: [published]
 
 jobs:
   build:
