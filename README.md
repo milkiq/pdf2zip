@@ -7,3 +7,5 @@
 ## 使用方法
 
 下载最新版本的构建结果并解压，将解压出来的 `pdftopng.exe` `pdftozip.exe` `zip.ps1` 放入需要转换的pdf目录，双击运行 `pdftozip.exe` 即可。
+
+工具会遍历当前路径中的所有pdf文件，并一一转换成zip。
